@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosmic Ring Preloader</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #050505;
+        }
+.wave-text {
+        font-family: Arial, sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #00d2ff;
+        display: flex;
+    }
+
+    .wave-text span {
+        display: inline-block; 
+        animation: wave 1.5s ease-in-out infinite;
+    }
+
+    .wave-text span:nth-child(1) { animation-delay: 0.1s; }
+    .wave-text span:nth-child(2) { animation-delay: 0.2s; }
+    .wave-text span:nth-child(3) { animation-delay: 0.3s; }
+    .wave-text span:nth-child(4) { animation-delay: 0.4s; }
+    .wave-text span:nth-child(5) { animation-delay: 0.5s; }
+    .wave-text span:nth-child(6) { animation-delay: 0.6s; }
+    .wave-text span:nth-child(7) { animation-delay: 0.7s; }
+
+    @keyframes wave {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.6);
+            color: #9d00ff; 
+        }
+    }
+</style>
+</head>
+<body>
+
+    <p class="wave-text">
+        <span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span>
+    </p>
+</body>
+</html>
