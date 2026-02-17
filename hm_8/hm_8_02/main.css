@@ -1,0 +1,114 @@
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    display: flex;
+    gap: 32px;
+    margin: 64px 130px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.box{
+    max-width: 271.000244140625px;
+    height: 280px;
+    display: flex;
+    justify-content: start;
+    align-content: start;
+    flex-direction: column;
+}
+.box img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+.box:nth-child(4) img {
+    width: 160px; 
+    height: 160px;
+}
+.box h1{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-top:20px;
+}
+.box p{
+    color: #7687A1;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*не знаю чому але помилка з 4 image через розміри 1700/1300 у інших 800/1300*/
+@media screen and (max-width:1440px) {
+.box{
+    max-width: 271.000244140625px;
+    height: 280px;
+    display: flex;
+    justify-content: start;
+    align-content: start;
+    flex-direction: column;
+}
+.box img{
+    width: 160px;
+    height: 160px;
+    object-fit: fill;
+    border-radius: 160px;
+}
+.box:nth-child(4) img{
+    width: 210px;
+    height: 160px;
+    object-fit: fill;
+    border-radius: 230px;
+}
+}
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 48px 24px;
+        display: flex;
+        gap: 24px;
+        justify-content: center; 
+    }
+
+    .box {
+        flex: 1 1 300px; 
+        max-width: 100%; 
+        height: auto;    
+    }
+
+    .box p {
+        width: 100%; 
+    }
+}
+@media screen and (max-width:375px) {
+    body {
+        width: 100%; 
+    }
+.container {
+        margin: 0;
+        padding: 40px 16px; 
+        gap: 32px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .box {
+        width: 343px; 
+        max-width: 100%;
+        height: auto; 
+        min-height: 220px; 
+    }
+    .box p {
+        width: 343px;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    .box img {
+        width: 160px; 
+        height: 160px;
+        object-fit: cover;
+    }
+}
