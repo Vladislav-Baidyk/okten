@@ -1,0 +1,60 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 982px;
+    width: 1512px;
+}
+.container{
+    display: flex;
+    margin: 270px 142px 221px 145px;
+    gap: 132px;
+}
+.box{
+    width: 319px;
+    height: 492px;
+    border:4px solid #554C4C;
+    position: relative;
+    background-color: rgba(221, 221, 221, 0.743);
+}
+.box:nth-child(even){
+    border: 4px solid #65856E;
+}
+.icon{
+    background: white;
+    position: absolute;
+    bottom: 441px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10rem;
+    border: 4px solid #554C4C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green{
+    border: 4px solid #65856E;
+}
+.first{
+    left: 108px;
+}
+.second{
+    left: 111px;
+}
+.icon img{
+    height: 60px;
+    width: 60px;
+}
+.text{
+    top: 175px;
+    left: 54px;
+    position: absolute;
+    width: 211px;
+    height: 72px;
+    text-align: center;
+    
+}
+.text p{
+    font-family: 'Inter' regular;
+    font-weight: 400;
+    font-size: 20px;
+}

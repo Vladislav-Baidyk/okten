@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MacBook 16</title>
+        <style>
+            body {
+                width: 1728px;
+                height: 1117px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-rows: 20% 60% 20%;
+            }
+
+            .header {
+                background-color: #8D8484;
+                display: grid;
+                place-items: center;
+            }
+
+            .mid-container {
+                display: grid;
+                grid-template-columns: 70.95% 29.05%;
+            }
+
+            .left-part {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            .content {
+                display: grid;
+                place-items: center;
+            }
+
+            .content:nth-child(1) { background-color: #776969; }
+            .content:nth-child(2) { background-color: #643030; }
+            .content:nth-child(3) { background-color: #441818; }
+
+            .right-part {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            .spam {
+                display: grid;
+                place-items: center;
+            }
+
+            .spam:nth-child(1) { background-color: #937575; }
+            .spam:nth-child(2) { background-color: #644C4C; }
+
+            .footer {
+                background-color: #BDBDBD;
+                display: grid;
+                place-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">Header</header>
+            <main class="mid-container">
+                <section class="left-part">
+                    <div class="content">Content-1</div>
+                    <div class="content">Content-2</div>
+                    <div class="content">Content-3</div>
+                </section>
+                <aside class="right-part">
+                    <div class="spam">spam-1</div>
+                    <div class="spam">spam-2</div>
+                </aside>
+            </main>
+            <footer class="footer">footer</footer>
+        </div>
+    </body>
+</html>

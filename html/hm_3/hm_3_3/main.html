@@ -1,79 +1,81 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>hm 3 1</title>
-    </head>
-    <style>
-        body{
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            min-height: 100vh;
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .header{
-            background-color: rgb(198, 67, 72);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 1rem;
-            width: 100%;
-            color: rgb(63, 63, 63);
-            height:33rem;
-        }
-        .main{
-            height: 33rem;
-            width: 100%;
-            background-color: rgb(55, 123, 191) ;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 1rem;
-            color: rgb(182, 181, 181); 
-        }
-        .footer{
-            height: 33rem;
-            width: 100%;
-            background-color: rgb(40, 110, 44) ;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 1rem;
-            color: rgb(182, 181, 181); 
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            font-size: 3rem;
-        }
-    </style>
-    <body>
-        <div class="container">
-            <div id="section1" class="header">
-                <h1>Section Title</h1>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
-                <a href="#section2">&#8595</a>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>hm 3 1</title>
+        </head>
+        <style>
+        html {
+                scroll-behavior: smooth;
+            }
+            body{
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                min-height: 100vh;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .header{
+                background-color: rgb(198, 67, 72);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                width: 100%;
+                color: rgb(63, 63, 63);
+                height:33rem;
+            }
+            .main{
+                height: 33rem;
+                width: 100%;
+                background-color: rgb(55, 123, 191) ;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                color: rgb(182, 181, 181); 
+            }
+            .footer{
+                height: 33rem;
+                width: 100%;
+                background-color: rgb(40, 110, 44) ;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                color: rgb(182, 181, 181); 
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 3rem;
+            }
+        </style>
+        <body>
+            <div class="container">
+                <div id="section1" class="header">
+                    <h1>Section Title</h1>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+                    <a href="#section2">&#8595</a>
+                </div>
+                <div id="section2" class="main">
+                    <a href="#section1">&#8593</a>
+                    <h1>Section Title</h1>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+                    <a href="#section3">&#8595</a>
+                </div>
+                <div id="section3" class="footer">  
+                    <a href="#section2">&#8593</a>
+                    <h1>Section Title</h1>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
             </div>
-            <div id="section2" class="main">
-                <a href="#section1">&#8593</a>
-                 <h1>Section Title</h1>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
-                <a href="#section3">&#8595</a>
             </div>
-            <div id="section3" class="footer">  
-                <a href="#section2">&#8593</a>
-                <h1>Section Title</h1>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
-           </div>
-        </div>
-    </body>
-</html>
+        </body>
+    </html>
