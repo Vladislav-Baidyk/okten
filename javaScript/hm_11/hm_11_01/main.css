@@ -19,13 +19,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 10rem;
     position: relative;
     margin-top: 10rem;
 }
 .cart-container{
-    height: 20rem;
-    width: 70rem;
+    height: 25rem;
+    width: 80rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,8 +70,8 @@ body{
     margin: 0;
 }
 .cart{
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     background: linear-gradient(110deg,rgb(141, 180, 204),rgb(79, 145, 186),rgb(141, 180, 204));
     overflow: hidden;
     border-radius: 0.5rem;

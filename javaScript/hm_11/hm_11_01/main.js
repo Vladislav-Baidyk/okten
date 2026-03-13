@@ -18,10 +18,14 @@ function showElem(cartO) {
     container.classList.add('cart-container')
     let mainContainer = document.getElementById('container');
 
+
+    let numberCart = document.createElement('h1');
+    numberCart.innerText = `${cartO.id}`;
+    container.append(numberCart);
     mainContainer.append(container);
-
-
-    for(let i =0; i < cartO.products.length ; i++){
+            for(let i =0; i < cartO.products.length ; i++){
+    
+    
     /* box container*/
     let cart = document.createElement('button');
     cart.classList.add('cart');
@@ -38,24 +42,32 @@ function showElem(cartO) {
     picture.style.display = 'block';
     cartContent.append(picture);
     
-    let text = document.createElement('h1');    
-    text.style.display = 'none';
-    text.innerText  = ' chuk ';
-    cartContent.append(text);
-        
+                /*info */
+ let productsInfo = document.createElement('div');
+        productsInfo.style.display = 'none';
+        productsInfo.innerHTML = `
+            <h3>${cartO.products[i].title}</h3>
+            <p>Price: $${cartO.products[i].price}</p>
+            <p>Quantity: ${cartO.products[i].quantity}</p>
+            <p>Total: $${cartO.products[i].total}</p>
+            <p>Id: $${cartO.products[i].id}</p>
+            <p>Discounted Total: ${cartO.products[i].discountedTotal}</p>
+            <p>Discount Percentage: $${cartO.products[i].discountPercentage}</p>
+        `;
+        cartContent.append(productsInfo);
     cart.onclick = () => {
-        if (text.style.display === 'block') {
+        if (productsInfo.style.display === 'block') {
             picture.style.display = 'block';
-            text.style.display = 'none';
+            productsInfo.style.display = 'none';
         } else {
             picture.style.display = 'none';
-            text.style.display = 'block';
+            productsInfo.style.display = 'block';
         }
     };
-            /*info */
-    }
 
     }
+    }
+
     
 
 
