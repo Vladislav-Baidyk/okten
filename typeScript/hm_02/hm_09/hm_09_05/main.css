@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem;
+    background:linear-gradient(110deg,rgb(61, 105, 61),rgb(140, 140, 83));
+}
+.moth-hour-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5rem;
+}
+.moth-hour-container p{
+    color: red;
+}

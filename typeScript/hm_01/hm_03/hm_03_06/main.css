@@ -1,0 +1,24 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to top, black , blue 400px, black 800px);
+    gap: 2rem;
+    overflow-x: hidden;
+    color: white;
+}
+
+.product-card{
+    background: rgba(255, 255, 0, 0.757);
+    border: 1px solid rgba(31, 31, 16, 0.582);
+    width: 400px;
+    height: auto;
+    text-align: center;
+}
+
+.product-image{
+    height: 200px;
+}

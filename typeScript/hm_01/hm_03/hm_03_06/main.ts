@@ -67,7 +67,7 @@
 
     Замість TITLE PRICE IMAGE – підставити відповідні поля з об’єкту
     */
-    let products = [
+    let products:{title:string,price:number,image:string}[] = [
 
     {
 
